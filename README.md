@@ -1,1 +1,1 @@
-# Shopify starter# ShopifyStarter
+# Shopify Starter

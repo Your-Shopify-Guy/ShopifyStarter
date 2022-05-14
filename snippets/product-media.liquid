@@ -1,0 +1,27 @@
+{% case media.media_type %}
+    {% when 'image' %}
+        <img 
+            loading="lazy"
+            src="{{ media | image_url }}" 
+            alt="{{ media.preview_image.alt }}" 
+            class="w-full h-full object-cover"
+            width="{{ media.width }}"
+            height="{{ media.height }}"
+            >
+
+    {% when 'external_video' %}
+    <!-- This creates an iframe with external video url -->
+        {{ media | external_video_tag: class: 'w-full h-80 object-cover' }}
+
+    {% when 'video' %}
+       <!-- This renders uploaded video with controls -->
+        {{ media | video_tag: controls: true, class: 'w-full h-full object-cover' }}
+
+    {% when 'model' %}
+     <!-- This is for 3d models-->
+        {{ media | model_viewer_tag }}
+
+    {% else %}
+      <!-- This creates a media tag for something that is not any of above-->
+        {{ media | media_tag }}
+{% endcase %} 
