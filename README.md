@@ -37,3 +37,11 @@ shopify theme serve
 
 - If you have trouble with theme serve command you may need
   Log out shopify admin in browser & shopify cli then log in your-store.myshopify.com/admin & login with cli shopify login --store your-store.myshopify.com & finally run shopify theme serve again
+
+  ## Tailwind
+  - [Tailwind Docs](https://tailwindcss.com/docs/installation)
+  - To watch & compile Tailwind in this theme you will need to open another terminal and run
+  
+  ```sh
+    npx tailwindcss -i ./src/tailwind.css -o ./assets/application.css --watch 
+  ```
