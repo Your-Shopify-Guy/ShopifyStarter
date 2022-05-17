@@ -33,7 +33,10 @@ shopify login --store store-name.myshopify.com
 shopify theme serve
 ```
 
- It will have a section in terminal with links to theme editor for this theme & a preview link for this theme. Note this is not the default Dawn theme, and it's not the published theme.
+ It will have a section in terminal with links to 
+ -  1) A local url this is where you view the local theme
+ -  2) The theme editor for this theme 
+ -  3) A preview link for this theme. Note this is not the local them unless it's published, by default the Dawn theme is published by default.
 
  - Note the first time you go to the preview url shown in the terminal you will need to enter the password you can find it by going to the shopify admin page for your development store, click on online store in left pannel and you will see see store password button at the top of page.
 
