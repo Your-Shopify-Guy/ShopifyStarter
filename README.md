@@ -1,5 +1,8 @@
 # :shopping: Shopify Starter
-This is a starter Shopify 2.0 Theme that uses Tailwind CSS for styling & JSON templates
+This is a starter Shopify 2.0 Theme using
+- Tailwind CSS for styling 
+- JSON templates 
+- Alpine js for navigation state changes, it's much lighter than using something like Vue.
 
 ## How to use
 
