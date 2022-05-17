@@ -28,7 +28,12 @@ shopify login --store store-name.myshopify.com
 
 - It will open a browser window follow prompts to login
 
-- Next run shopify theme serve it will have a section in terminal with links to theme editor for this theme & a preview link for this theme. Note this is not the default Dawn theme.
+- Next run 
+```sh
+shopify theme serve
+```
+
+ it will have a section in terminal with links to theme editor for this theme & a preview link for this theme. Note this is not the default Dawn theme.
 
 - If you have trouble with theme serve command you may need
   Log out shopify admin in browser & shopify cli then log in your-store.myshopify.com/admin & login with cli shopify login --store your-store.myshopify.com & finally run shopify theme serve again
